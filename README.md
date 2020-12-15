@@ -114,6 +114,9 @@ cd build/bin，编译出来gttc可执行文件
 
 ```
 
+./gttc init --datadir ./node/datadir genesis.json 
+
+
 nohup ./gttc --datadir ./node/datadir --networkid 7777 --rpc --rpcapi db,ccm,net,web3,personal,admin,miner --rpcport 3432  --rpcaddr 0.0.0.0  --port  7324 --ws  --wsaddr  0.0.0.0  --wsport 7558 --wsorigins "*"  --wsapi "db,ccm,net,web3,personal,admin,shh,txpool,debug,miner"  --ipcpath ./node/datadir/gttc.ipc  --allow-insecure-unlock  --rpccorsdomain "*" > ./node.log &
 
 ```
